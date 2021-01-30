@@ -35,8 +35,8 @@ app.get('',(req,res)=>{
 //About Page
 app.get('/about',(req,res)=>{
     res.render('about',{
-        title: 'About Mee',
-        name: 'Jamal Ahmad Khan'
+        title: 'About Me',
+        name: 'Jamal Ahmad'
     })
 })
 
