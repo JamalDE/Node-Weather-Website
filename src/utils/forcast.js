@@ -13,7 +13,7 @@ const forcast = (lat,long, callback) =>{
         }
         else{
             
-            callback(undefined, body.current.weather_descriptions[0] + '. It is currently '+ body.current.temperature +' degree Farenhight out. Its feels like ' + body.current.feelslike + ' degree out.')
+            callback(undefined, body.current.weather_descriptions[0] + '. It is currently '+ body.current.temperature +' degree Farenhight out. Its feels like ' + body.current.feelslike + ' degree out. The wind speed is '+ body.current.wind_speed + ' ')
         }
     })
 }
