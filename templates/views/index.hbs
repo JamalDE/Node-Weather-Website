@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="../../public/images/weather.png">
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather!</p>
+
+        <form>
+            <input type="text" onkeypress="return (event.charCode > 64 && 
+        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" 
+        placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id="msg1"></p>
+        <p id="msg2"></p>
+    </div>
+
+    
+    {{>footer}}
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
